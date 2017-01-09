@@ -7,16 +7,16 @@
 5) 'rails s' in console startet den Server				#http://localhost:3000 	rails s p-3001 startet den server auf port 3001
 														#http://localhost:3000/events zeigt die Routen an
 
-6) unter config routes.rb get "movies => movies#index" hinzufügen
+6) 'rails g controller movies'
 
-7) 'rails g controller movies'
+7) unter config routes.rb get 'movies'=> "movies#index" hinzufügen
 
 8) unter app/controllers/movies_controller.rb hinzufügen:
 	def index
 		@movies = ["Iron Man", "Superman", "Spider-Man"]
 	end
 
-9) unter app/views/events/index.html.erb z.B.
+9) unter app/views/events/index.html.erb z.B.     (kann variieren "events" kann name wie Controller beinhalten)
 	<h1>Movies</h1>
 	<ul>
 		<% @movies.each do |movies| %>
@@ -44,7 +44,7 @@
 11) rake db:migrate								#schaut nach ob in db/migrate/2016... die Tabellen existieren, wenn nicht werden diese erstellt
 
 13) Movies.all (aus Modell Ordner die Klasse als Bezeichnung nehmen)	#zeigt an
-	m = Movies.new		#lasbares und schreibbares atrribut
+	m = Movie.new		#lasbares und schreibbares atrribut
 	m.name = "Weihnachten"
 	m.date = "2016-12-24"
 	m.save				#speichert das attribut
@@ -83,4 +83,3 @@
 
 	1. rails g scaffold review name:string stars:integer comment:string movie_id:integer
 	2. rake db:migrate
-	
