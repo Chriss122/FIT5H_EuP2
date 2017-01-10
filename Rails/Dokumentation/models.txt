@@ -20,3 +20,6 @@ Erstellen von Tabellen/Models:
 	Alle Änderungen an einer Datenbank werden mit Hilfe von Migrationen erstellt, d.h. Ruby-Klassen in denen Tabellen neu angelegt oder verändert werden können.
 	Diese Migrations müssen mit einem seperaten Befehl zur Datenbank gesendet werden:
 		rake db:migrate
+
+Beziehungen: 
+	
