@@ -83,3 +83,28 @@
 
 	1. rails g scaffold review name:string stars:integer comment:string movie_id:integer
 	2. rake db:migrate
+
+
+
+	CSS-Framework Foundation einbinden.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Rails Projekt erstellen:
+
+	in die zugehörige Stelle navigieren, wo die App erstellt werden soll.
+	Dann rails new <name> mit cd in das Projekt navigieren, 
+	Rubyracer aktivieren danach bundle install, damit er das neue package runterlädt und aktualisiert
+	
